@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceBreaker 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ok.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="background-animation">
+        <video autoplay muted loop id="stars-video">
+            <source src="assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <header class="header gothic-header">
+        <nav class="navbar">
+            <a href="id.html" class="nav-logo">
+                <img src="assets/head.png" alt="Aziz Dani Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="tentang.html" class="nav-link">Tentang saya.</a></li>
+                <li class="nav-item"><a href="keahlian.html" class="nav-link">Keahlian.</a></li>
+                <li class="nav-item"><a href="projek.html" class="nav-link">Projek.</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak.</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section id="projects" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Projek <i class="fas fa-rocket"></i></h2>
+            <div class="projects-grid">
+                <div class="project-card hover-lift">
+                    <div class="project-icon"><i class="fas fa-robot"></i></div>
+                    <h3>C-REDRO</h3>
+                    <img src="assets/credro.png" width="290" height="260">
+                    <p></p>
+                    <p>Sebuah bot musik Discord yang sempat populer di tahun 2021 dikarenakan tampilannya yang elegan dan estetik, serta mudah untuk digunakan.</p>
+                    <div class="project-tags">
+                        <span>#DiscordBot</span><span>#JavaScript</span><span>#Music</span><span>#Community</span>
+                    </div>
+                    <div class="project-status in-active">Tidak Aktif</div>
+                </div>
+                <div class="project-card hover-lift">
+                    <div class="project-icon"><i class="fas fa-cube"></i></div>
+                    <h3>TROMUTZ</h3>
+                    <img src="assets/tromutz.png" width="290" height="260">
+                    <p></p>
+                    <p>Server Minecraft yang sempat populer di wilayah SEA pada tahun 2019-2021, menawarkan berbagai minigames dan fokus pada Survival Multiplayer.</p>
+                    <div class="project-tags">
+                        <span>#Minecraft</span><span>#GameServer</span><span>#Community</span><span>#Java</span>
+                    </div>
+                    <div class="project-status in-active">Tidak Aktif</div>
+                </div>
+                          <div class="project-card hover-lift">
+            <div class="project-icon"><i class="fas fa-globe"></i></div>
+            <h3>Website Portofolio</h3>
+            <img src="assets/website.png" width="290" height="260">
+            <p></p>
+            <p>Website ini portofolio pribadi yang menampilkan profil, keahlian, projek, galeri, saya membuat ini karena ingin melatih skills saya tetang coding</p>
+            <div class="project-tags"><span>#Portfolio</span><span>#Web</span><span>#HTML</span><span>#CSS</span><span>#Javascript</span></div>
+            <div class="project-status active">Aktif</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muhammad Aziz Syah Dani. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

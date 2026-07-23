@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceBreaker 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ok.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="background-animation">
+        <video autoplay muted loop id="stars-video">
+            <source src="assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <header class="header gothic-header">
+        <nav class="navbar">
+            <a href="id.html" class="nav-logo">
+                <img src="assets/head.png" alt="Aziz Dani Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="about.html" class="nav-link">About me.</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills.</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects.</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacts.</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <img src="assets/avatar.png" alt="Muhammad Aziz Syah Dani" class="hero-avatar floating">
+                <h1 class="hero-title">Wazzaaa, i'm <span class="highlight">Aziz Albatany</span></h1>
+                <p class="hero-subtitle typewriter">Just a ordinary person that likes to explore new things.</p>
+                <a href="about.html" class="btn primary-btn scroll-down-btn">Let's Go! <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="mouse-scroll">
+                <div class="mouse"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muhammad Aziz Syah Dani. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="music-player">
+        <button id="music-toggle"><i class="fas fa-music"></i></button>
+        <div id="music-controls" class="hidden">
+            <audio id="bg-music" src="assets/song.mp3" loop></audio>
+            <button id="play-pause"><i class="fas fa-play"></i></button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

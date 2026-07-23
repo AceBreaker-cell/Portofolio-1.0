@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Language!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ok.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation">
+        <video autoplay muted loop id="stars-video">
+            <source src="assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <div id="language-selection-overlay" class="language-selection-overlay active">
+        <div class="language-selection-card fade-in-up">
+            <h1>Choose Your Language</h1>
+            <div class="lang-buttons">
+                <button class="lang-btn" onclick="selectLanguage('id')">
+                    <img src="assets/flag_id.png" alt="Indonesian Flag"> Indonesia
+                </button>
+                <button class="lang-btn" onclick="selectLanguage('en')">
+                    <img src="assets/flag_en.png" alt="English Flag"> English
+                </button>
+            </div>
+            <p class="lang-note">Please select your preferred language to proceed.</p>
+        </div>
+    </div>
+
+    <div id="transition-overlay" class="transition-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script>
+        function selectLanguage(lang) {
+            const transitionOverlay = document.getElementById('transition-overlay');
+            transitionOverlay.classList.add('active');
+            setTimeout(() => {
+                if (lang === 'id') {
+                    window.location.href = 'indonesia/id.html';
+                } else {
+                    window.location.href = 'english/en.html';
+                }
+            }, 800);
+        }
+
+        window.onload = function() {
+            const flagId = new Image();
+            flagId.src = 'assets/flag_id.png';
+            const flagEn = new Image();
+            flagEn.src = 'assets/flag_en.png';
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceBreaker 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ok.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="background-animation">
+        <video autoplay muted loop id="stars-video">
+            <source src="assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <header class="header gothic-header">
+        <nav class="navbar">
+            <a href="en.html" class="nav-logo">
+                <img src="assets/head.png" alt="Aziz Dani Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="about.html" class="nav-link">About me.</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills.</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects.</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacts.</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section id="contact" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Contacts <i class="fas fa-paper-plane"></i></h2>
+            <p class="contact-description text-glow">You intereseted to work together or you wanted to say hi? Don't be shy to contact me!</p>
+            <div class="contact-links">
+                <a href="mailto:aziz929476@gmail.com" class="contact-link hover-pop" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://github.com/AceBreaker-cell" class="contact-link hover-pop" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.youtube.com/@AceBreaker" target="_blank" class="contact-link hover-pop youtube-btn"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.tiktok.com/@aceebreakerr" target="_blank" class="contact-link hover-pop tiktok-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit" class="btn primary-btn">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muhammad Aziz Syah Dani. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

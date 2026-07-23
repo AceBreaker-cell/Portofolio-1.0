@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AceBreaker 1.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/ok.gif" type="image/gif">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .info-table, .edu-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 3.5px solid rgba(255, 92, 141, 0.7); 
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 25px rgba(255, 92, 141, 0.25);
+      backdrop-filter: blur(6px);
+      transition: all 0.3s ease;
+    }
+
+    .info-table:hover, .edu-table:hover {
+      box-shadow: 0 0 30px rgba(255, 92, 141, 0.45);
+      transform: scale(1.01);
+    }
+
+    .info-table td, .edu-table th, .edu-table td {
+      padding: 14px 18px;
+      text-align: left;
+      color: var(--light-text-color);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .info-table td:first-child {
+      color: #ff5c8d;
+      font-weight: 600;
+      width: 220px;
+    }
+
+    .edu-table th {
+      background: rgba(184, 74, 98, 0.18);
+      color: #ff5c8d;
+      font-weight: 700;
+      font-size: 1em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .edu-table td {
+      font-size: 0.95em;
+    }
+
+    .info-table tr:last-child td, .edu-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    h3.table-title {
+      text-align: left;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ff5c8d;
+      text-shadow: 0 0 10px rgba(255, 92, 141, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-overlay"></div>
+  <div class="background-animation">
+    <video autoplay muted loop id="stars-video">
+      <source src="assets/stars.mp4" type="video/mp4">
+    </video>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+  </div>
+
+  <header class="header gothic-header">
+    <nav class="navbar">
+      <a href="en.html" class="nav-logo">
+        <img src="assets/head.png" alt="Aziz Dani Logo" class="nav-logo-img">
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="about.html" class="nav-link">About me.</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills.</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects.</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacts.</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya <i class="fas fa-user-astronaut"></i></h2>
+        <div class="about-content">
+          <p class="text-glow">I'm a Computer Engineering Student that interested in world of programming, and also in designing.</p>
+          <p class="text-glow">I have experience in Managing minecraft server and editing plugins because i interested with something like that since i was in Junior High School.</p>
+          <p class="text-glow">Digital world is my place to create, solving problems, and learning new things!</p>
+
+          <h3 class="table-title">Informasi Pribadi</h3>
+          <table class="info-table">
+            <tr><td>Full Name</td><td>Muhammad Aziz Syah Dani</td></tr>
+            <tr><td>Place</td><td>Asia, Indonesia</td></tr>
+            <tr><td>Profession</td><td>Student at STEI-K ITB</td></tr>
+            <tr><td>Interest</td><td><p class="text-glow">Server Management</p><p class="text-glow">Bot Development</p><p class="text-glow">System Design</p></td></tr>
+          </table>
+
+          <h3 class="table-title">Edukasi</h3>
+          <table class="edu-table">
+            <tr>
+              <th></th>
+              <th>Institution</th>
+              <th>Faculty / Department</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td><img src="assets/juniorhighschool.png" width="50" height="50"></td>
+              <td>SMP Negeri 1 Kota Jambi</td>
+              <td>IPA</td>
+              <td>2019 - 2021 </td>
+            </tr>
+            <tr>
+              <td><img src="assets/highschool.png" width="50" height="50"></td>
+              <td>SMA Negeri 3 Kota Jambi</td>
+              <td>HUMANIORA</td>
+              <td>2022 - 2025    </td>
+            </tr>
+            <tr>
+              <td><img src="assets/college.png" width="50" height="50"></td>
+              <td>Institut Technology Of Bandung</td>
+              <td>STEI-K</td>
+              <td>2025 - Now </td>
+            </tr>
+          </table>
+
+          
+          <div class="about-buttons mt-4">
+            <a href="skills.html" class="btn primary-btn">Look Skills! <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Muhammad Aziz Syah Dani. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

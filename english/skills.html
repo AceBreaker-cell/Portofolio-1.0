@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceBreaker 1.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/ok.gif" type="image/gif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="background-animation">
+        <video autoplay muted loop id="stars-video">
+            <source src="assets/stars.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <header class="header gothic-header">
+        <nav class="navbar">
+            <a href="en.html" class="nav-logo">
+                <img src="assets/head.png" alt="Aziz Dani Logo" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="about.html" class="nav-link">About me.</a></li>
+                <li class="nav-item"><a href="skills.html" class="nav-link">Skills.</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects.</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacts.</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <section id="skills" class="section fade-in">
+        <div class="container">
+            <h2 class="section-title">Skills <i class="fas fa-laptop-code"></i></h2>
+            <div class="skills-grid">
+                <div class="skill-card hover-grow">
+                    <i class="fab fa-discord skill-icon"></i>
+                    <h3>discord.js</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 74%;" data-progress="74"><span>74%</span></div>
+                    </div>
+                </div>
+                <div class="skill-card hover-grow">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%;" data-progress="80"><span>80%</span></div>
+                    </div>
+                </div>
+                <div class="skill-card hover-grow">
+                    <i class="fab fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 47%;" data-progress="47"><span>47%</span></div>
+                    </div>
+                </div>
+                <div class="skill-card hover-grow">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 68%;" data-progress="68"><span>68%</span></div>
+                    </div>
+                </div>
+                <div class="skill-card hover-grow">
+                    <i class="fas fa-server skill-icon"></i>
+                    <h3>Server Manage</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 91%;" data-progress="91"><span>91%</span></div>
+                    </div>
+                </div>
+                <div class="skill-card hover-grow">
+                    <i class="fas fa-cogs skill-icon"></i>
+                    <h3>Plugin Editing</h3>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 66%;" data-progress="66"><span>66%</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Muhammad Aziz Syah Dani. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
